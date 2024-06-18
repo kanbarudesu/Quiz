@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c133f595f34ba419e16c42c38a07ce, type: 3}
+  m_Name: QuestionsData 1
+  m_EditorClassIdentifier: 
+  Questions:
+  - rid: 337179746414100481
+  - rid: 337179746414100480
+  - rid: 337179905583480834
+  - rid: 337179905583480836
+  - rid: 337179905583480837
+  - rid: 337179949050101760
+  - rid: 337179949050101761
+  references:
+    version: 2
+    RefIds:
+    - rid: 337179746414100480
+      type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New MultipleChoiceQuestion1
+        Sprite: {fileID: 0}
+        Correct: 0
+        Answers:
+          Answers:
+          - A
+          - B
+          - C
+          - D
+    - rid: 337179746414100481
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category D
+          Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New SingleChoiceQuestion2
+        Sprite: {fileID: 0}
+        Answers:
+          Answers:
+          - A
+          - B
+          - C
+          - D
+    - rid: 337179905583480834
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category C
+          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New SingleChoiceQuestion3
+        Sprite: {fileID: 0}
+        Answers:
+          Answers:
+          - A
+          - B
+          - C
+          - D
+    - rid: 337179905583480836
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category B
+          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New SingleChoiceQuestion5
+        Sprite: {fileID: 0}
+        Answers:
+          Answers:
+          - A
+          - B
+          - C
+          - D
+    - rid: 337179905583480837
+      type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category C
+          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New MultipleChoiceQuestion6
+        Sprite: {fileID: 0}
+        Correct: 0
+        Answers:
+          Answers:
+          - A
+          - B
+          - C
+          - D
+    - rid: 337179949050101760
+      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category C
+          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category D
+          Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New TrueFalseQuestion7
+        Sprite: {fileID: 0}
+        Answers:
+          Answer: 0
+    - rid: 337179949050101761
+      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category B
+          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category C
+          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New TrueFalseQuestion8
+        Sprite: {fileID: 0}
+        Answers:
+          Answer: 0

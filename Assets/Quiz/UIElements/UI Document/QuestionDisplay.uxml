@@ -1,0 +1,143 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Quiz/UIElements/Style/ButonWithImage.uss?fileID=7433441132597879392&amp;guid=62168890afec028438cd2ed54f87860a&amp;type=3#ButonWithImage" />
+    <Style src="project://database/Assets/Quiz/UIElements/Style/QuestionDisplayStyleSheet2.uss?fileID=7433441132597879392&amp;guid=ea78ce5f4d1404442bf4a5e6112b0d0b&amp;type=3#QuestionDisplayStyleSheet2" />
+    <Style src="project://database/Assets/Quiz/Script/Radial%20Progress/RadialProgress.uss?fileID=7433441132597879392&amp;guid=43655d1cf89348e4bb5ac9a34d9d98b3&amp;type=3#RadialProgress" />
+    <ui:VisualElement name="root" class="root">
+        <ui:VisualElement name="main-menu-content-container" class="hide-content" style="justify-content: center;">
+            <ui:VisualElement name="menu-title-icon" style="background-image: url(&quot;project://database/Assets/Settings/Lit2DSceneTemplate.scenetemplate?fileID=-3604256930052969394&amp;guid=d03ed43fc9d8a4f2e9fa70c1c7916eb9&amp;type=2#Lit 2D&quot;); -unity-background-scale-mode: scale-to-fit; height: 500px; margin-bottom: 32px;" />
+            <KanQuiz.ButtonImage label-text="Play" show-image="false" name="menu-play-button" class="button-style" style="align-self: center; flex-shrink: 1; flex-grow: 1; max-height: 150px; width: 50%; height: 25%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="game-mode-content-container" class="hide-content">
+            <ui:VisualElement name="header" class="header">
+                <ui:Label tabindex="-1" text="Game Mode" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-mode__title-label" class="header-title-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body" class="body">
+                <ui:VisualElement name="game-mode-container" class="game-mode-container">
+                    <ui:VisualElement name="question-type">
+                        <ui:Label tabindex="-1" text="Question Type" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title__label" class="game-mode-title__label" />
+                        <ui:VisualElement name="question-type__buttons-container" class="vertical-content question-type__button-container">
+                            <KanQuiz.ButtonImage class="button-style" />
+                            <KanQuiz.ButtonImage class="button-style" />
+                            <KanQuiz.ButtonImage class="button-style" />
+                            <KanQuiz.ButtonImage class="button-style" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="game-timer" style="flex-basis: 50%;">
+                        <ui:Label tabindex="-1" text="Time" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title__label" class="game-mode-title__label" />
+                        <ui:VisualElement name="game-timer__buttons-container" class="horizontal-content game-timer__button-container">
+                            <KanQuiz.ButtonImage name="game-timer-yes-button" label-text="Yes" class="button-style" />
+                            <KanQuiz.ButtonImage name="game-timer-no-button" label-text="No" class="button-style" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" class="footer">
+                <KanQuiz.ButtonImage show-image="false" label-text="Back" name="game-mode__back-button" class="button-style" />
+                <KanQuiz.ButtonImage name="game-mode__next-button" label-text="Next" class="button-style" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="category-content-container" class="hide-content">
+            <ui:VisualElement name="header" class="header">
+                <ui:Label tabindex="-1" text="Category" parse-escape-sequences="true" display-tooltip-when-elided="true" name="category__title-label" class="header-title-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body" class="body">
+                <ui:VisualElement name="category-container">
+                    <ui:ScrollView name="category-buttons__scroll-view" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden" class="category-buttons__scroll-view">
+                        <ui:VisualElement name="category-buttons-container" class="category-buttons-container horizontal-content">
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" name="ButtonImage" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                            <KanQuiz.ButtonImage label-text="Category" show-image="true" class="button-style" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" class="footer">
+                <KanQuiz.ButtonImage show-image="false" label-text="Back" name="category__back-button" class="button-style" />
+                <KanQuiz.ButtonImage name="category__play-button" label-text="Play" class="button-style" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="question-content-container" class="hide-content">
+            <ui:VisualElement name="header" class="header">
+                <ui:VisualElement name="header-question-container" style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement name="header-left" class="header-left">
+                        <ui:Label tabindex="-1" text="0/0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="correct-question-amount-label" class="question-amount-label" />
+                        <ui:Label tabindex="-1" text="Score : 000000" parse-escape-sequences="true" display-tooltip-when-elided="true" name="scores-label" class="scores-label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="header-right" class="header-right">
+                        <ui:VisualElement name="label-container" style="flex-grow: 1; padding-left: 20px; padding-right: 15px; padding-top: 20px; padding-bottom: 20px; justify-content: space-around;">
+                            <ui:Label tabindex="-1" text="Question Remaining : 10" parse-escape-sequences="true" display-tooltip-when-elided="true" name="question-remaining-label" style="font-size: 24px;" />
+                            <ui:Label tabindex="-1" text="Category : Any" parse-escape-sequences="true" display-tooltip-when-elided="true" name="question-category-label" style="font-size: 24px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="question-timer">
+                            <RadialProgress name="question-timer-radial" style="width: 135px; height: 135px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="body" class="body">
+                <ui:VisualElement name="question-container">
+                    <ui:Label tabindex="-1" text="Question Text Lorem ipsum Dolor si amet" parse-escape-sequences="true" display-tooltip-when-elided="true" name="question-label" class="question-label" />
+                    <ui:VisualElement name="question-image" class="question-image" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-4528830608231651361&amp;guid=b02b46ac215a98d4cb2eb8f3c6a980ef&amp;type=3#arrow-up@2x&quot;);" />
+                    <ui:VisualElement name="answer-buttons-container" class="answer-buttons-container vertical-content">
+                        <KanQuiz.ButtonImage class="button-style" />
+                        <KanQuiz.ButtonImage class="button-style" />
+                        <KanQuiz.ButtonImage class="button-style" />
+                        <KanQuiz.ButtonImage class="button-style" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" class="footer">
+                <KanQuiz.ButtonImage name="question__quit-button" label-text="Quit" class="button-style" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="game-quit-popup" class="hide-content" style="justify-content: space-around;">
+            <ui:VisualElement name="modal-window" class="game-quit-popup">
+                <ui:Label tabindex="-1" text="Do you really want to quit?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-quit-label" style="font-size: 32px; -unity-text-align: middle-center; flex-basis: 75%;" />
+                <ui:VisualElement name="game-quit-buttons-container" style="flex-direction: row; flex-basis: 25%; padding-right: 5%; padding-left: 5%; margin-bottom: 25px;">
+                    <ui:Button text="Yes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-quit-yes-button" class="button-style" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Space" style="flex-grow: 0.25;" />
+                    <ui:Button text="No" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-quit-no-button" class="button-style" style="flex-grow: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="game-finished-popup" class="hide-content" style="justify-content: space-around;">
+            <ui:VisualElement name="modal-window" class="game-finished-popup" style="background-color: rgb(92, 138, 209);">
+                <ui:VisualElement name="score-container" style="flex-grow: 1; padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px;">
+                    <ui:VisualElement name="game-finished-icon" style="flex-grow: 1; flex-basis: 70%; -unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=8228938214290033325&amp;guid=b02b46ac215a98d4cb2eb8f3c6a980ef&amp;type=3#console.erroricon&quot;);" />
+                    <ui:Label tabindex="-1" text="SCORE 9999" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-finished-score-label" style="flex-basis: 15%; font-size: 52px; -unity-text-align: lower-center;" />
+                    <ui:Label tabindex="-1" text="Best Score 9999" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-finished-best-score-label" style="flex-basis: 10%; -unity-text-align: upper-center; font-size: 32px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="game-finished-button-container" style="flex-direction: row; flex-basis: 10%; padding-right: 5%; padding-left: 5%; margin-bottom: 25px;">
+                    <ui:Button text="Retry" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-finished-retry-button" class="button-style" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Space" style="flex-grow: 0.25;" />
+                    <ui:Button text="Quit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="game-finished-quit-button" class="button-style" style="flex-grow: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

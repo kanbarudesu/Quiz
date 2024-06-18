@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c133f595f34ba419e16c42c38a07ce, type: 3}
+  m_Name: QuestionsData
+  m_EditorClassIdentifier: 
+  Questions:
+  - rid: 337179723159306248
+  - rid: 337179905583480833
+  - rid: 337179723159306249
+  - rid: 6007839431201128448
+  - rid: 6007839431201128449
+  - rid: 6007839431201128450
+  references:
+    version: 2
+    RefIds:
+    - rid: 337179723159306248
+      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category C
+          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category D
+          Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category B
+          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        Question: Is This True false Question?
+        Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        Answers:
+          Answer: 0
+    - rid: 337179723159306249
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category C
+          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        Question: Singlechoice question?
+        Sprite: {fileID: 0}
+        Answers:
+          Answers:
+          - Yes
+          - Maybe
+          - No
+    - rid: 337179905583480833
+      type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category B
+          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category C
+          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        Question: Is this Multiple choice Question?
+        Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        Correct: 2
+        Answers:
+          Answers:
+          - Yes
+          - First Answer
+          - No
+          - Maybe
+    - rid: 6007839431201128448
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Category B
+          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        Question: Second Single Choice Q
+        Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+        Answers:
+          Answers:
+          - a
+          - b
+          - c
+          - d
+    - rid: 6007839431201128449
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category A
+          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        Question: Third Single Choice Q
+        Sprite: {fileID: 0}
+        Answers:
+          Answers:
+          - a
+          - b
+          - c
+          - d
+    - rid: 6007839431201128450
+      type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Category D
+          Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+        Question: New MultipleChoiceQuestion
+        Sprite: {fileID: 0}
+        Correct: 3
+        Answers:
+          Answers:
+          - a
+          - b
+          - c
+          - d

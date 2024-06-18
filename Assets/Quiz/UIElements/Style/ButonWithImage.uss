@@ -1,0 +1,16 @@
+.button-label {
+    flex-grow: 1;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    flex-shrink: 1;
+    font-size: 22px;
+    width: 100%;
+}
+
+.button-image {
+    -unity-background-scale-mode: scale-to-fit;
+    flex-grow: 1;
+    min-height: 75%;
+    background-image: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-1087164816274819069&guid=b02b46ac215a98d4cb2eb8f3c6a980ef&type=3#arrow-right@2x");
+    display: none;
+}
