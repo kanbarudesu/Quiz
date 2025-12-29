@@ -1,0 +1,13 @@
+QuestionType,Question,Categories,Answers,Correct
+Single,What is 7 x 8?,Math,54|56|64|58,56
+Single,Which planet is known as the Red Planet?,Science|General Knowledge,Venus|Mars|Jupiter|Saturn,Mars
+Single,Which language is primarily used in Unity scripting?,Programming|Technology,Java|C++|C#|Python,C#
+Single,Which number system is primarily used by computers?,Math|Programming,Decimal|Binary|Hexadecimal|Octal,Binary
+Multiple,Which of the following are prime numbers?,Math,2|5|4|9,2
+Multiple,Which countries were part of the Axis Powers?,History|World History,Germany|Italy|Japan|France,3
+Multiple,Which of the following are states of matter?,Science,Solid|Liquid|Gas|Energy,3
+Multiple,Which of the following require electricity to function?,Science|Technology,Computer|Calculator|Smartphone|Book,3
+TrueFalse,Is 0 an even number?,Math,,true
+TrueFalse,Was Napoleon Bonaparte French?,History,,true
+TrueFalse,Does water boil at 100 degrees Celsius at sea level?,Science,,true
+TrueFalse,Is gravity a force that affects all physical objects with mass?,Science|Physics,,true

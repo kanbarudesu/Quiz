@@ -1,11 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace KanQuiz
 {
     [System.Serializable]
     public class SingleChoiceQuestion : BaseQuestion
     {
+        [SerializeReference]
         public StringsAnswer Answers = new StringsAnswer(new List<string>());
 
         public override List<string> GetAnswers()

@@ -1,10 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
-using System;
 
 namespace KanQuiz.Editor
 {
@@ -23,6 +20,7 @@ namespace KanQuiz.Editor
 
             answerDataContainer = new VisualElement();
             answerDataContainer.style.flexGrow = 1;
+            answerDataContainer.style.flexDirection = FlexDirection.Column;
             answerDataContainer.AddToClassList("contentBackground");
 
             answerListView = InitializeListView();
@@ -84,18 +82,12 @@ namespace KanQuiz.Editor
             answerDataContainer.Clear();
             foreach (var selectedObject in enumerable)
             {
-                var textField = new TextField("Answer");
+                var textField = new TextField();
                 textField.BindProperty(selectedObject as SerializedProperty);
-                textField.style.flexDirection = FlexDirection.Column;
-                textField.style.alignItems = Align.Center;
-                textField.style.unityTextAlign = TextAnchor.MiddleCenter;
+                textField.multiline = true;
+                textField.style.whiteSpace = WhiteSpace.Normal;
 
-                //Trying to look for the text element using the Name from debugger, but it doesn't work. using the class name works fine.
-                var textElement = textField.Q("unity-text-input").Q(null, "unity-text-element");
-                textElement.style.flexWrap = Wrap.Wrap;
-                textElement.style.whiteSpace = WhiteSpace.Normal;
-                textElement.style.width = 1;
-
+                answerDataContainer.Add(new Label("Answer"));
                 answerDataContainer.Add(textField);
             }
         }

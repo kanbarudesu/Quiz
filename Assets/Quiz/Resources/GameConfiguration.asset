@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: GameConfiguration
   m_EditorClassIdentifier: 
   Categories:
-  - Name: Category A
+  - Name: Math
     Sprite: {fileID: 0}
-  - Name: Category B
-    Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - Name: Category C
-    Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - Name: Category D
-    Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  - Name: Science
+    Sprite: {fileID: 0}
+  - Name: General Knowledge
+    Sprite: {fileID: 0}
+  - Name: Programming
+    Sprite: {fileID: 0}
+  - Name: Technology
+    Sprite: {fileID: 0}
+  - Name: History
+    Sprite: {fileID: 0}
+  - Name: World History
+    Sprite: {fileID: 0}
+  - Name: Physics
+    Sprite: {fileID: 0}
   AnyCategorySprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   QuestionAmount: 10
   TimeLimit: 5

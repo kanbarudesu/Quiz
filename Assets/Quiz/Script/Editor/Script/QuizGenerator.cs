@@ -109,6 +109,35 @@ namespace KanQuiz.Editor
             questionsDataField.objectType = typeof(QuestionsData);
             questionsDataField.RegisterValueChangedCallback(OnQuestionsDataChanged);
             questionsDataField.value = initialQuestionsDataObject;
+
+            var loadCsvButton = root.Q<Button>("ImportCSV");
+            loadCsvButton.clicked += OnLoadCSVButtonClicked;
+        }
+
+        private void OnLoadCSVButtonClicked()
+        {
+            var questionsData = questionsDataField.value as QuestionsData;
+            var gameConfig = gameConfigurationField.value as GameConfiguration;
+            if (questionsData == null)
+            {
+                EditorUtility.DisplayDialog(
+                    "No QuestionsData",
+                    "Please assign a QuestionsData asset first.",
+                    "OK"
+                );
+                return;
+            }
+
+            string path = EditorUtility.OpenFilePanel(
+                "Import Questions",
+                Application.dataPath,
+                "csv"
+            );
+
+            if (string.IsNullOrEmpty(path))
+                return;
+
+            QuestionDataImporter.ImportFromCSV(path, questionsData, gameConfig);
         }
 
         private void DrawGameConfigurationDataDisplay()

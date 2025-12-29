@@ -13,105 +13,234 @@ MonoBehaviour:
   m_Name: QuestionsData
   m_EditorClassIdentifier: 
   Questions:
-  - rid: 337179723159306248
-  - rid: 337179905583480833
-  - rid: 337179723159306249
-  - rid: 6007839431201128448
-  - rid: 6007839431201128449
-  - rid: 6007839431201128450
+  - rid: 8762723514492125280
+  - rid: 8762723514492125281
+  - rid: 8762723514492125282
+  - rid: 8762723514492125283
+  - rid: 8762723514492125284
+  - rid: 8762723514492125285
+  - rid: 8762723514492125286
+  - rid: 8762723514492125287
+  - rid: 8762723514492125288
+  - rid: 8762723514492125289
+  - rid: 8762723514492125290
+  - rid: 8762723514492125291
   references:
     version: 2
     RefIds:
-    - rid: 337179723159306248
-      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
-      data:
-        Categories:
-        - Name: Category A
-          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-        - Name: Category C
-          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-        - Name: Category D
-          Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-        - Name: Category B
-          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-        Question: Is This True false Question?
-        Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-        Answers:
-          Answer: 0
-    - rid: 337179723159306249
+    - rid: 8762723514492125280
       type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
       data:
         Categories:
-        - Name: Category C
-          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-        Question: Singlechoice question?
+        - Name: Math
+          Sprite: {fileID: 0}
+        Question: What is 7 x 8?
         Sprite: {fileID: 0}
         Answers:
-          Answers:
-          - Yes
-          - Maybe
-          - No
-    - rid: 337179905583480833
+          rid: 8762723514492125292
+    - rid: 8762723514492125281
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Science
+          Sprite: {fileID: 0}
+        - Name: General Knowledge
+          Sprite: {fileID: 0}
+        Question: Which planet is known as the Red Planet?
+        Sprite: {fileID: 0}
+        Answers:
+          rid: 8762723514492125293
+    - rid: 8762723514492125282
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Programming
+          Sprite: {fileID: 0}
+        - Name: Technology
+          Sprite: {fileID: 0}
+        Question: Which language is primarily used in Unity scripting?
+        Sprite: {fileID: 0}
+        Answers:
+          rid: 8762723514492125294
+    - rid: 8762723514492125283
+      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Math
+          Sprite: {fileID: 0}
+        - Name: Programming
+          Sprite: {fileID: 0}
+        Question: Which number system is primarily used by computers?
+        Sprite: {fileID: 0}
+        Answers:
+          rid: 8762723514492125295
+    - rid: 8762723514492125284
       type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
       data:
         Categories:
-        - Name: Category B
-          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-        - Name: Category A
-          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-        - Name: Category C
-          Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-        Question: Is this Multiple choice Question?
-        Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+        - Name: Math
+          Sprite: {fileID: 0}
+        Question: Which of the following are prime numbers?
+        Sprite: {fileID: 0}
         Correct: 2
         Answers:
-          Answers:
-          - Yes
-          - First Answer
-          - No
-          - Maybe
-    - rid: 6007839431201128448
-      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
-      data:
-        Categories:
-        - Name: Category A
-          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-        - Name: Category B
-          Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-        Question: Second Single Choice Q
-        Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-        Answers:
-          Answers:
-          - a
-          - b
-          - c
-          - d
-    - rid: 6007839431201128449
-      type: {class: SingleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
-      data:
-        Categories:
-        - Name: Category A
-          Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-        Question: Third Single Choice Q
-        Sprite: {fileID: 0}
-        Answers:
-          Answers:
-          - a
-          - b
-          - c
-          - d
-    - rid: 6007839431201128450
+          rid: 8762723514492125296
+    - rid: 8762723514492125285
       type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
       data:
         Categories:
-        - Name: Category D
-          Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-        Question: New MultipleChoiceQuestion
+        - Name: History
+          Sprite: {fileID: 0}
+        - Name: World History
+          Sprite: {fileID: 0}
+        Question: Which countries were part of the Axis Powers?
         Sprite: {fileID: 0}
         Correct: 3
         Answers:
-          Answers:
-          - a
-          - b
-          - c
-          - d
+          rid: 8762723514492125297
+    - rid: 8762723514492125286
+      type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Science
+          Sprite: {fileID: 0}
+        Question: Which of the following are states of matter?
+        Sprite: {fileID: 0}
+        Correct: 3
+        Answers:
+          rid: 8762723514492125298
+    - rid: 8762723514492125287
+      type: {class: MultipleChoiceQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Science
+          Sprite: {fileID: 0}
+        - Name: Technology
+          Sprite: {fileID: 0}
+        Question: Which of the following require electricity to function?
+        Sprite: {fileID: 0}
+        Correct: 3
+        Answers:
+          rid: 8762723514492125299
+    - rid: 8762723514492125288
+      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Math
+          Sprite: {fileID: 0}
+        Question: Is 0 an even number?
+        Sprite: {fileID: 0}
+        Answers:
+          rid: 8762723514492125300
+    - rid: 8762723514492125289
+      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: History
+          Sprite: {fileID: 0}
+        Question: Was Napoleon Bonaparte French?
+        Sprite: {fileID: 0}
+        Answers:
+          rid: 8762723514492125301
+    - rid: 8762723514492125290
+      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Science
+          Sprite: {fileID: 0}
+        Question: Does water boil at 100 degrees Celsius at sea level?
+        Sprite: {fileID: 0}
+        Answers:
+          rid: 8762723514492125302
+    - rid: 8762723514492125291
+      type: {class: TrueFalseQuestion, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Categories:
+        - Name: Science
+          Sprite: {fileID: 0}
+        - Name: Physics
+          Sprite: {fileID: 0}
+        Question: Is gravity a force that affects all physical objects with mass?
+        Sprite: {fileID: 0}
+        Answers:
+          rid: 8762723514492125303
+    - rid: 8762723514492125292
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - 56
+        - 54
+        - 64
+        - 58
+    - rid: 8762723514492125293
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - Mars
+        - Venus
+        - Jupiter
+        - Saturn
+    - rid: 8762723514492125294
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - C#
+        - Java
+        - C++
+        - Python
+    - rid: 8762723514492125295
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - Binary
+        - Decimal
+        - Hexadecimal
+        - Octal
+    - rid: 8762723514492125296
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - 2
+        - 5
+        - 4
+        - 9
+    - rid: 8762723514492125297
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - Germany
+        - Italy
+        - Japan
+        - France
+    - rid: 8762723514492125298
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - Solid
+        - Liquid
+        - Gas
+        - Energy
+    - rid: 8762723514492125299
+      type: {class: StringsAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answers:
+        - Computer
+        - Calculator
+        - Smartphone
+        - Book
+    - rid: 8762723514492125300
+      type: {class: BooleanAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answer: 1
+    - rid: 8762723514492125301
+      type: {class: BooleanAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answer: 1
+    - rid: 8762723514492125302
+      type: {class: BooleanAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answer: 1
+    - rid: 8762723514492125303
+      type: {class: BooleanAnswer, ns: KanQuiz, asm: KanQuiz}
+      data:
+        Answer: 1

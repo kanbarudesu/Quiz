@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace KanQuiz
@@ -9,6 +7,7 @@ namespace KanQuiz
     public class MultipleChoiceQuestion : BaseQuestion
     {
         public int Correct;
+        [SerializeReference]
         public StringsAnswer Answers = new StringsAnswer(new List<string>());
 
         public override List<string> GetAnswers()

@@ -9,8 +9,18 @@ public class BooleanAnswerDrawer : PropertyDrawer
 {
     public override VisualElement CreatePropertyGUI(SerializedProperty property)
     {
-        Toggle toggle = new Toggle("Answer");
-        toggle.BindProperty(property);
+        var answerProp = property.FindPropertyRelative("Answer");
+        var toggle = new Toggle("Answer");
+
+        if (answerProp != null)
+        {
+            toggle.BindProperty(answerProp);
+        }
+        else
+        {
+            toggle.SetEnabled(false);
+        }
+
         return toggle;
     }
 }
